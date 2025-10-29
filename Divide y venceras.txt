@@ -1,0 +1,11 @@
+
+-	Divide y vencerás
+Es un patrón algorítmico que divide un problema en subproblemas más pequeños, los resuelve recursivamente y combina sus soluciones.
+-	Shell Sort
+	Ordena elementos separados separándolos de manera decreciente
+	Usa secuencias
+	El tiempo depende de la secuencia, lo normal puede estar entre O(n^{5/4}) y O(n^{3/2}), en el peor caso O(n²).
+
+-	Quick Sort
+	Es un algoritmo de divide y vencerás que particiona el arreglo en base a un pivote, luego ordena subarreglos
+	Demora en promedio O(n log n), en el peor caso O(n²) 
