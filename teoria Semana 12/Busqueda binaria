@@ -1,0 +1,7 @@
+Se comienza con el elemento del medio de la lista, si el objetivo es el mismo que el del medio, lo encuentra y termina la busqueda
+
+Si el objetivo es menor que el elemento del medio, el algoritmo sigue buscando en la mitad izquierda, pero si el objetivo es mayor, busca en la mitad derecha. El proceso se repite hasta que el objetivo es encontrado o el rango de búsqueda se reduzca a cero
+
+en el peor de los casos demora O(log n), lo que significa que, en lugar de revisar todos los elementos como en la búsqueda lineal, la búsqueda binaria reduce significativamente el número de comparaciones necesarias, especialmente en listas grandes
+
+La lista debe estar ordenada para que funcione correctamente. Si la lista no está ordenada, primero debe ordenarse, lo que podría afectar la eficiencia
