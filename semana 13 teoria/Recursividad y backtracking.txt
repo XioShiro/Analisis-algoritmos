@@ -1,0 +1,50 @@
+¿Qué es?
+Es una técnica conceptual en programación y matemáticas donde un problema se resuelve expresándolo en términos de versiones más pequeñas del mismo problema. Una entidad se define en función de sí misma, pero siempre debe existir una forma de terminar la definición para que no sea infinita.
+
+
+Componentes esenciales
+
+Caso base: condición que detiene la recursión (imprescindible).
+
+Llamada recursiva: cuando la función se invoca a sí misma sobre un problema reducido.
+
+Progresión: cada llamada debe acercar al caso base (por ejemplo, reducir un contador). Cada llamada crea un contexto en la pila de llamadas (LIFO). Al alcanzarse el caso base, las llamadas se resuelven en orden inverso y se combinan los resultados.
+
+
+
+Tipos relevantes
+
+Directa: la función se llama a sí misma.
+
+Indirecta: funciones que se llaman mutuamente (A → B → A).
+
+Backtracking: técnica recursiva para explorar soluciones parciales y retroceder si una rama falla (por ejemplo laberintos, sudoku).
+
+
+
+Recursión vs iteración
+
+Recursión: Es más expresiva para estructuras auto-similares (como búsquedas), usa más memoria por la pila.
+
+Iteración: Es más eficiente en memoria, pero puede ser menos natural para algunos problemas.
+
+Regla práctica: Usar recursión cuando simplifica la lógica; preferir iteración si la profundidad o rendimiento son críticos.
+
+
+
+Ventajas y desventajas
+
+Ventajas: Un código claro y natural para problemas recursivos que coincide con muchas definiciones matemáticas.
+
+Desventajas: Un consumo de pila (riesgo de overflow) y posible repetición de subproblemas (puede ser ineficiente sin optimizaciones).
+
+
+
+Técnicas y optimizaciones
+
+Memoización: guardar resultados de subproblemas repetidos.
+
+Recursión de cola: cuando la llamada recursiva es la última operación (puede optimizarse en algunos entornos).
+
+Podas/heurísticas: reducir ramas inútiles en búsquedas.
+
