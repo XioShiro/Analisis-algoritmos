@@ -1,0 +1,58 @@
+¿Qué es?
+
+Es una técnica conceptual donde un problema se resuelve definiéndolo en términos de versiones más pequeñas del mismo problema. Una función o proceso se invoca a sí mismo sobre datos reducidos hasta alcanzar una condición que detiene las llamadas. 
+El backtracking es una estrategia de búsqueda que suele implementarse de forma recursiva, construye soluciones parciales y retrocede cuando una rama no lleva a una solución válida. La selección óptima es el objetivo de muchos problemas: elegir la mejor solución posible según un criterio (por ejemplo, máximo valor o mínimo coste).
+
+
+Componentes esenciales de recursión
+
+Caso base: condición necesaria que detiene la recursión.
+
+Llamada recursiva: invocación de la función sobre una versión más simple del problema.
+
+Progresión: cada llamada debe acercar al caso base (p. ej., reducir un contador o simplificar la estructura).
+
+Contexto en pila: cada llamada crea un marco en la pila; al alcanzar el caso base, los marcos se resuelven en orden inverso.
+
+
+Tipos relevantes
+
+Recursión directa: la función se llama a sí misma.
+
+Recursión indirecta: varias funciones se llaman entre sí (A → B → A).
+
+Backtracking: uso recursivo para explorar alternativas; si una ruta falla, se deshacen pasos y se prueban otras opciones. Muy usado en laberintos, sudoku y combinatoria.
+
+Construye soluciones paso a paso (parciales).
+
+Si una solución parcial no puede conducir a una solución completa válida, se retrocede, es decir se deshacen los últimos pasos y se exploran otras opciones.
+
+Permite encontrar y enumerar soluciones válidas
+
+
+
+Selección óptima
+
+Consiste en buscar la mejor solución entre todas las posibles según un criterio, valor, coste, etc.
+
+Puede resolverse por búsqueda exhaustiva incluyendo backtracking.
+
+Ejemplo conceptual: decidir para cada elemento si incluirlo o no para maximizar valor sin exceder un límite, problema de la mochila.
+
+
+
+Recursión vs Iteración
+
+Recursión: más expresiva y natural para problemas auto-similares como árboles o combinaciones. Facilita la lectura y la modelación.
+
+Iteración: suele usar menos memoria, no consume pila y puede ser más eficiente en tiempo o memoria.
+
+Regla práctica: elegir recursión cuando simplifica la lógica; preferir iteración cuando la profundidad o el rendimiento son críticos.
+
+
+
+Ventajas y desventajas 
+
+Ventajas: código claro y alineado con definiciones matemáticas; ideal para problemas con estructura recursiva.
+
+Desventajas: consumo de pila, riesgo de desbordamiento, posible recomputación de subproblemas o ineficiencia y crecimiento exponencial.
